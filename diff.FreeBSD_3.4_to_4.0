@@ -1,0 +1,30 @@
+*** lines_saver.c.FreeBSD3.4	Mon May  1 22:00:47 2000
+--- lines_saver.c.FreeBSD4.0	Mon May  1 22:02:23 2000
+***************
+*** 39,49 ****
+  #include <sys/kernel.h>
+  #include <sys/module.h>
+  #include <sys/syslog.h>
+  
+- #include <machine/md_var.h>
+  #include <machine/random.h>
+  
+! #include <saver.h>
+  
+  static void	draw_line(int, int, int, int, int);
+  static void	vertical(int, int, int, int);
+--- 39,52 ----
+  #include <sys/kernel.h>
+  #include <sys/module.h>
+  #include <sys/syslog.h>
++ #include <sys/consio.h>
++ #include <sys/fbio.h>
+  
+  #include <machine/random.h>
+  
+! #include <dev/fb/fbreg.h>
+! #include <dev/fb/splashreg.h>
+! #include <dev/syscons/syscons.h>
+  
+  static void	draw_line(int, int, int, int, int);
+  static void	vertical(int, int, int, int);
