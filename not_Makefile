@@ -1,0 +1,38 @@
+documentation = README.md
+
+#
+# Note: make requires that we set the value of a variable OUTSIDE any rules.
+#
+
+timestamp = `date +%Y%m%d.%H%M`
+
+all:
+	@echo "This is the Makefile only for committing to GitHub. Use make -f not_makefile"
+
+vi:
+	vi $(documentation)
+
+notes:
+	(cd ../notes && make vi)
+
+quotes:
+	(cd ../notes && make quotes)
+
+bibtex:
+	(cd ../bibtex && make vi)
+
+commit:
+	git add .
+	git commit -am "commit from Makefile $(timestamp)"
+	git pull --rebase
+	git push
+
+readme:
+	vi $(documentation)
+
+spell:
+	aspell --lang=en check $(documentation)
+
+clean:
+	rm -f $(documentation).bak
+

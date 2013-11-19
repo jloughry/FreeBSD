@@ -10,3 +10,5 @@ Source code in C: [`lines_saver.c`](https://github.com/jloughry/FreeBSD/blob/mas
 
 Submitted as a patch 30th May 2000.
 
+Since this is a BSD project, the licence is the two-clause BSD licence.
+
