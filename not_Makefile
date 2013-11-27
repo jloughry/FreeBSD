@@ -4,11 +4,5 @@ all:
 vi:
 	vi README.md
 
-spell:
-	aspell --lang=en check README.md
-
-clean:
-	@echo "\"make clean\" doesn't do anything here."
-
 include common.mk
 
