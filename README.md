@@ -11,7 +11,7 @@ in *Dr Dobb's* in 1992.[<sup>*</sup>](#ref1)
 
 Source code in C: [`lines_saver.c`](https://github.com/jloughry/FreeBSD/blob/master/lines_saver.c).
 
-Submitted as a patch to the [FreeBSD Project](freebsd.org) 30th May 2000.
+Submitted as a patch to the [FreeBSD Project](http://freebsd.org) 30th May 2000.
 
 Since this is a BSD project, the licence is the two-clause BSD licence.
 
@@ -19,7 +19,12 @@ Makefile
 --------
 
 When installing on FreeBSD, the file `rename_this_file_to_Makefile` is the
-real Makefile.
+real Makefile that goes into the FreeBSD distribution.
+
+TODO
+----
+
+Need a screenshot of the programme running here.
 
 References
 ----------
