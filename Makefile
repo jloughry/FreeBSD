@@ -1,9 +1,11 @@
+all::
+	@echo "This is the Makefile only for committing to GitHub. Use make -f not_makefile"
 
-KMOD=	lines_saver
-SRCS= 	lines_saver.c
+clean::
+	rm -f consolidated_bibtex_file.bib
 
-NOMAN=
-CFLAGS+= -I${.CURDIR}/..
-CWARNFLAGS= -Wall -pedantic
+vi:
+	make readme
 
-.include <bsd.kmod.mk>
+include common.mk
+

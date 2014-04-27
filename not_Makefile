@@ -1,8 +1,0 @@
-all::
-	@echo "This is the Makefile only for committing to GitHub. Use make -f not_makefile"
-
-vi:
-	make -f not_Makefile readme
-
-include common.mk
-
